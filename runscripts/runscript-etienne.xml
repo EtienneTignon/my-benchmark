@@ -1,0 +1,24 @@
+<runscript output="output-folder">
+
+	<machine name="zuse" cpu="24x8xE5520@2.27GHz" memory="24GB"/>
+	
+  	<config name="seq-generic" template="templates/seq-generic.sh"/>
+  
+	<system name="clingo" version="4.5.4" measures="clasp" config="seq-generic">
+
+    		<setting name="setting-1" cmdline="--stats --quiet=1,0 ~/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/basic.lp" tag="basic" />
+
+    </system>
+
+	<seqjob name="seq-gen" timeout="900" runs="1" script_mode="timeout" walltime="50:00:00" parallel="1"/>
+
+	<benchmark name="robots">
+		<folder path="benchmarks/action_juggling_robot/inst/"></folder>
+	</benchmark>
+	
+	<project name="clingo-seq-job" job="seq-gen">
+		<runtag machine="zuse" benchmark="robots" tag="basic"/>
+	</project>
+
+</runscript>
+

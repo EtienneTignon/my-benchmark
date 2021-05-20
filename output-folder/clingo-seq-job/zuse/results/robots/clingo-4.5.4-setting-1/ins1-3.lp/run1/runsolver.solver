@@ -1,0 +1,94 @@
+clingo version 5.4.0
+Reading from ...tion_juggling_robot/Encodings/basic.lp
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:1:19-31: info: atom does not occur in any rule head:
+  edge(#X0,#X1,#P2)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:1:37-44: info: atom does not occur in any rule head:
+  time(T)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:1:46-54: info: atom does not occur in any rule head:
+  robot(R)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:3:14-24: info: atom does not occur in any rule head:
+  start(R,V)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:5:48-55: info: atom does not occur in any rule head:
+  time(T)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:8:19-26: info: atom does not occur in any rule head:
+  time(T)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:11:4-13: info: atom does not occur in any rule head:
+  goal(R,V)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:11:30-37: info: atom does not occur in any rule head:
+  time(T)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../Path_generation/basic.lp:11:43-52: info: atom does not occur in any rule head:
+  time((1*T+1))
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:2:4-14: info: atom does not occur in any rule head:
+  start(R,V)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:2:20-31: info: atom does not occur in any rule head:
+  edge(#X0,#P1,#P2)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:2:37-48: info: atom does not occur in any rule head:
+  edge(#P0,#X1,#P2)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:3:4-13: info: atom does not occur in any rule head:
+  goal(R,V)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:6:4-12: info: atom does not occur in any rule head:
+  robot(R)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:6:18-27: info: atom does not occur in any rule head:
+  goal(#X0,#P1)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:7:4-13: info: atom does not occur in any rule head:
+  goal(R,V)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:7:15-25: info: atom does not occur in any rule head:
+  goal(R',V)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:12:4-14: info: atom does not occur in any rule head:
+  start(R,V)
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:12:16-27: info: atom does not occur in any rule head:
+  start(R,V')
+
+/home/tignon/benchmark/benchmark-tool/benchmarks/action_juggling_robot/Encodings/../assumption.lp:15:4-12: info: atom does not occur in any rule head:
+  robot(R)
+
+Solving...
+Answer: 1
+
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.016s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
+
+Choices      : 0       
+Conflicts    : 0        (Analyzed: 0)
+Restarts     : 0       
+Model-Level  : 0.0     
+Problems     : 1        (Average Length: 0.00 Splits: 0)
+Lemmas       : 0        (Deleted: 0)
+  Binary     : 0        (Ratio:   0.00%)
+  Ternary    : 0        (Ratio:   0.00%)
+  Conflict   : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 0        (Average:  0.00 Max:   0 Sum:      0)
+  Executed   : 0        (Average:  0.00 Max:   0 Sum:      0 Ratio:   0.00%)
+  Bounded    : 0        (Average:  0.00 Max:   0 Sum:      0 Ratio: 100.00%)
+
+Rules        : 0       
+Atoms        : 0       
+Bodies       : 0       
+Tight        : Yes
+Variables    : 0        (Eliminated:    0 Frozen:    0)
+Constraints  : 0        (Binary:   0.0% Ternary:   0.0% Other:   0.0%)
+

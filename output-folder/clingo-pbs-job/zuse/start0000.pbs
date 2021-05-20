@@ -1,0 +1,44 @@
+#!/bin/bash
+#SBATCH --output=out.%j
+#SBATCH --error=err.%j
+#SBATCH --time=23:59:59        # walltime
+#SBATCH --cpus-per-task=4    # number of processor cores (i.e. tasks)
+#SBATCH --partition=kr
+
+# Good Idea to stop operation on first error.
+set -e
+
+# Load environment modules for your application here.
+source ~/.bashrc
+
+# Run jobs
+jobs="results/robots/clingo-4.5.4-setting-1/ins1-3.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins3-2.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins0.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins2-1.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins4-3.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins5-3.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins2-2.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins3-3.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/inst1.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins4-2.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/instspe.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/inst2.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins2-3.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins5-1.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins3-1.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins1-2.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins5-2.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/inst0.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins1-1.lp/run1/start.sh
+results/robots/clingo-4.5.4-setting-1/ins4-1.lp/run1/start.sh
+"
+echo running jobs@$(hostname)...
+echo ""
+echo "jobs:" $jobs
+echo ""
+for i in $jobs
+do
+    echo "running " $i
+    $i
+done
